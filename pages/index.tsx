@@ -2,12 +2,16 @@
 // import Image from 'next/image'
 
 
-// const inter = Inter({ subsets: ['latin'] })
+
+import NavBar from "@/components/navigaton/navbar";
+
+
+
 
 export default function Home() {
   return (
     <>
-      <div className="w-screen h-screen bg-slate-600"></div>
+      <h1>Hello world</h1>
     </>
   )
 }
