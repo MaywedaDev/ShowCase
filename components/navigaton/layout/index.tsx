@@ -6,10 +6,14 @@ import NavBar from "../navbar";
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Layout = ({children}: {children: ReactElement}) => {
+type LayoutProps = {
+  children: ReactElement
+}
+
+const Layout = ({children}: LayoutProps) => {
 
    
-    return ( <div className={`w-screen h-screen bg-slate-600 ${inter.className} bg-primary`}>
+    return ( <div className={`max-w-screen h-screen bg-primary ${inter.className} bg-primary`}>
             <NavBar />
             {children}
       </div> );

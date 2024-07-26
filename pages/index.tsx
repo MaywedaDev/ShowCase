@@ -1,9 +1,9 @@
 // import Head from 'next/head'
 // import Image from 'next/image'
 
+import About from "@/components/landing/about";
+import Hero from "@/components/landing/hero";
 
-
-import NavBar from "@/components/navigaton/navbar";
 
 
 
@@ -11,7 +11,8 @@ import NavBar from "@/components/navigaton/navbar";
 export default function Home() {
   return (
     <>
-      <h1>Hello world</h1>
+      <Hero />
+      <About />
     </>
   )
 }
