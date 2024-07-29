@@ -3,6 +3,7 @@
 
 import About from "@/components/landing/about";
 import Hero from "@/components/landing/hero";
+import Products from "@/components/landing/products";
 
 
 
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <Products />
     </>
   )
 }
