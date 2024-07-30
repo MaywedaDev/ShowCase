@@ -13,7 +13,7 @@ type LayoutProps = {
 const Layout = ({children}: LayoutProps) => {
 
    
-    return ( <div className={`max-w-screen min-h-screen bg-primary ${inter.className} bg-primary`}>
+    return ( <div className={`max-w-screen min-h-screen bg-primary ${inter.className} text-white`}>
             <NavBar />
             {children}
       </div> );

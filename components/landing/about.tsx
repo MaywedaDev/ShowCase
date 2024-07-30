@@ -14,7 +14,7 @@ const About = () => {
             </div>
         </div>
         <div className="mt-24 grid grid-cols-3 grid-rows-2 w-full gap-x-5 gap-y-7 h-[660px]">
-            {cars.map((car, i) => (
+            {cars.slice(0, 3).map((car, i) => (
                 <div key={i} className={i === 0 ? "row-span-2" : "col-span-2"}>
                     <CarCard {...car} />
                 </div>
