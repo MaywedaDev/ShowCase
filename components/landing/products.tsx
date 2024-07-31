@@ -14,7 +14,7 @@ const offers = [
 ]
 
 const Products = () => {
-    return ( <div className="mx-28 py-28">
+    return ( <div className="mx-28 py-28 flex flex-col">
         <div className="mx-auto max-w-[780px] text-center mb-8" >
             <h2 className="uppercase text-4xl font-semibold leading-[54px] mb-3">What we bring to you</h2>
             <p className="text-[#FFFFFFB2] font-medium leading-[24px]">We are all about the fast, luxury and safety. That’s why we provide the best service you can imagine.
@@ -32,6 +32,7 @@ const Products = () => {
                 <CarCard key={i} {...car} />
             ))}
         </div>
+        <button className="mx-auto bg-white text-black px-8 py-3 mt-8 text-2xl font-semibold">See all</button>
     </div> );
 }
 

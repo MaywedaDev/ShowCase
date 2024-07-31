@@ -2,6 +2,7 @@ import { StaticImageData } from 'next/image'
 import camero from './camero.png'
 import porsche from './porsche.png'
 import coupe from './unsplash_-oVaYMgBMbs.png'
+import bmw from './bmw.png'
 import car1 from './Frame 36.png'
 import car2 from './unsplash_HN30GTWuCJU.png'
 import car3 from './unsplash_JxbvdKB6_3g.png'
@@ -19,7 +20,8 @@ const cars: StaticImageData[] = [
     car3,
     car4,
     car5,
-    car6
+    car6,
+    bmw
     // Add more car images here...
 ]
 
