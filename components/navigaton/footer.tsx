@@ -1,4 +1,4 @@
-import { title } from "process";
+
 
 const Footer = () => {
 
@@ -8,8 +8,9 @@ const Footer = () => {
         {title: "Partner", sublinks: ["Our Partner", "Community", "Customers"]}
     ]
 
-    return ( <div className="w-full bg-[#151A1A] px-28 py-14">
-            <div className="w-full flex justify-between">
+    return ( <div className="w-full bg-[#151A1A] px-8 md:px-16 xl:px-28 py-14">
+            <div className="w-full flex max-[900px]:flex-wrap justify-between gap-16
+            ">
             <div className="max-w-[360px]">
                 <h3 className="text-2xl">Showcase</h3>
                 <p className="mt-4 text-[#FFFFFFB2]">
@@ -20,9 +21,9 @@ const Footer = () => {
                     <button className="h-full py-3 px-4 bg-[#1D1D1D] text-[#373639]">Subscribe</button>
                 </div>
             </div>
-            <div className="flex">
+            <div className="flex max-lg:flex-wrap gap-x-24 gap-y-16">
                     {links.map((link, index) => (
-                        <div className="mr-28" key={index}>
+                        <div key={index}>
                             <h4 className="text-xl font-medium">{link.title}</h4>
                             <ul className="space-y-2 mt-3">
                                 {link.sublinks.map((sublink, subIndex) => (

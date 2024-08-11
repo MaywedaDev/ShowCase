@@ -12,6 +12,7 @@ type accordionTabType = {
 
 const FAQ = () => {
 
+
     const qas: accordionTabType[] = [
         { question: 'Supercars to get in 2023 and why?', answer: 'You should try getting the Huracan, not just for the speed but the luxurious style. Its sleek and glassier than clear coats, finishing with a deep, glassy shine. This car is truly unrivaled amongst paint protections and nice value for your money. '},
         { question: 'Customers care', answer: '' },
@@ -19,7 +20,7 @@ const FAQ = () => {
     ]
 
 
-    return ( <div className="w-full flex px-28 my-28 gap-7">
+    return ( <div className="w-full flex px-8 md:px-16 xl:px-28 my-28 gap-10 shrink">
         <div>
             <h2 className="text-[32px] font-medium">Maybe your question is yet to be answered, check this out</h2>
             <div className="w-full mt-10 space-y-6">
@@ -33,8 +34,8 @@ const FAQ = () => {
                 })}
             </div>
         </div>
-        <div className="w-full">
-            <Image {...bmw} alt="bmw" />
+        <div className="max-lg:hidden w-full min-w-[500px]">
+            <Image src={bmw.src} height={bmw.height} width={bmw.width} alt="bmw" />
         </div>
     </div> );
 }

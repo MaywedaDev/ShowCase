@@ -14,20 +14,20 @@ const offers = [
 ]
 
 const Products = () => {
-    return ( <div className="mx-28 py-28 flex flex-col">
+    return ( <div className="mx-8 md:mx-16 xl:mx-28 py-28 flex flex-col">
         <div className="mx-auto max-w-[780px] text-center mb-8" >
             <h2 className="uppercase text-4xl font-semibold leading-[54px] mb-3">What we bring to you</h2>
             <p className="text-[#FFFFFFB2] font-medium leading-[24px]">We are all about the fast, luxury and safety. That’s why we provide the best service you can imagine.
             </p>
         </div>
-        <div className="w-full flex gap-8 mt-20">
+        <div className="w-full flex flex-col sm:flex-row gap-8 mt-20">
             {offers.map(
                 (offer, index) => (
                     <ProductCard key={index} position={index + 1} title={offer} />
                 )
             )}
         </div>
-        <div className="grid mt-28 gap-x-5 gap-y-7 grid-cols-3 grid-rows-2">
+        <div className="grid mt-28 gap-x-5 gap-y-7 lg:grid-cols-3 md:grid-cols-2">
             { cars.slice(3, 9).map((car, i) => (
                 <CarCard key={i} {...car} />
             ))}

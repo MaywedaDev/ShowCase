@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@media screen and (max-width: 960px){
+    html{
+        font-size: 14px;
+    }
+}
